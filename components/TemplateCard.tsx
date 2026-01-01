@@ -4,11 +4,11 @@ import { Card, Button } from "react-bootstrap";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-interface TemplateCardProps {
+type TemplateCardProps = {
     title: string;
     img: string;
     templateName: string;
-}
+};
 
 export default function TemplateCard({
     title,
