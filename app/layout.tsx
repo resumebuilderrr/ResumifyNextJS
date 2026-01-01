@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import NavbarComp from "../components/NavbarComp";
 import Footer from "../components/Footer";
 
@@ -12,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
